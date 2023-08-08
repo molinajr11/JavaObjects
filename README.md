@@ -11,3 +11,9 @@ Es la capacidad de un objeto de ser referenciado por varios tipos.
 - cuando una clase se extiende de otra.
 - cuando una clase implementa una interfaz.
 - cuando sobreEscirbimos un metodo. 
+# herencia ventaja 
+- La herencia captura lo que es común y aísla lo que es diferente entre clases.
+
+# Interface ventajas 
+- Garantiza que todos los métodos de clase que implementan una interfaz se puedan llamar de forma segura.
+- Con composiciones e interfaces tendremos más flexibilidad con nuestro código, ya que no estaremos apegados al acoplamiento que propone la herencia.
