@@ -42,14 +42,14 @@ double d = f;  // Casting implícito de float a double.
 NOTA 📓 ☑️ :la pérdida de precisión cuando se realiza casting implícito entre enteros (int)  y de punto flotante, ya que los enteros no pueden representar fracciones exactas en algunos casos.
 #  Casting explisito : 🚩
 - Enteros :
-int intValue = 100;
-byte byteValue = (byte) intValue;   // Casting explícito de int a byte
-short shortValue = (short) intValue; // Casting explícito de int a short
+int intValue = 100.
+byte byteValue = (byte) intValue.   // Casting explícito de int a byte
+short shortValue = (short) intValue. // Casting explícito de int a short
 - Punto floante
-double doubleValue = 10.5;
+double doubleValue = 10.5.
 float floatValue = (float) doubleValue; // Casting explícito de double a float.
 - Casting Caracteres 
-char charValue = 'A';
+char charValue = 'A'.
 int intValue = (int) charValue;   // Casting explícito de char a int
 
 
