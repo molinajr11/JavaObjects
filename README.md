@@ -29,7 +29,7 @@ Es la capacidad de un objeto de ser referenciado por varios tipos.
 - Las matrices tienen un atributo length para conocer el tamaño
 - La forma literal de crear un array, utilizando llaves {}.
 # Casting y tipos implicito y explisito
--  implicito : es el casteo automatico cuando el lenguaje realiza la conversion de un tipo de datos a otro. en java se da cuando los datos primitivos tiene una jererquia compatible es decir no hay perdida de infromacion en la conversion.
+-  implicito 🏳️ : es el casteo automatico cuando el lenguaje realiza la conversion de un tipo de datos a otro. en java se da cuando los datos primitivos tiene una jererquia compatible es decir no hay perdida de infromacion en la conversion.
 # Casteo de enteros:
   byte b = 10;
 short s = b;   // Casting implícito de byte a short
@@ -40,15 +40,15 @@ long l = i;    // Casting implícito de int a long
  float f = 10.5f;
 double d = f;  // Casting implícito de float a double.
 NOTA 📓 ☑️ :la pérdida de precisión cuando se realiza casting implícito entre enteros (int)  y de punto flotante, ya que los enteros no pueden representar fracciones exactas en algunos casos.
-#  Casting explisito :
-- Enteros
+#  Casting explisito : 🚩
+- Enteros :
 int intValue = 100;
 byte byteValue = (byte) intValue;   // Casting explícito de int a byte
 short shortValue = (short) intValue; // Casting explícito de int a short
 - Punto floante
 double doubleValue = 10.5;
 float floatValue = (float) doubleValue; // Casting explícito de double a float.
-- Casting Caracteres
+- Casting Caracteres 
 char charValue = 'A';
 int intValue = (int) charValue;   // Casting explícito de char a int
 
