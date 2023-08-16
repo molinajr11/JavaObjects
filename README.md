@@ -29,7 +29,8 @@ Es la capacidad de un objeto de ser referenciado por varios tipos.
 - Las matrices tienen un atributo length para conocer el tamaño
 - La forma literal de crear un array, utilizando llaves {}.
 # Casting y tipos implicito y explisito
--  implicito 🏳️ : es el casteo automatico cuando el lenguaje realiza la conversion de un tipo de datos a otro. en java se da cuando los datos primitivos tiene una jererquia compatible es decir no hay perdida de infromacion en la conversion.
+# Casting implicito 🏳️ 
+Es el casteo automatico cuando el lenguaje realiza la conversion de un tipo de datos a otro. en java se da cuando los datos primitivos tiene una jererquia  compatible es decir no hay perdida de infromacion en la conversion.
 # Casteo de enteros:
   byte b = 10;
 short s = b;   // Casting implícito de byte a short
@@ -41,6 +42,7 @@ long l = i;    // Casting implícito de int a long
 double d = f;  // Casting implícito de float a double.
 NOTA 📓 ☑️ :la pérdida de precisión cuando se realiza casting implícito entre enteros (int)  y de punto flotante, ya que los enteros no pueden representar fracciones exactas en algunos casos.
 #  Casting explisito : 🚩
+Es un casting forzado que se hace manualmente y puede haber perdida de informacion.
 - Enteros :
 int intValue = 100.
 byte byteValue = (byte) intValue.   // Casting explícito de int a byte
@@ -54,7 +56,22 @@ int intValue = (int) charValue;   // Casting explícito de char a int
 # Vectores 
 - Los vectores son un tipo de lista.
 - Trabajan con threadSafe
-- Los vectores se volieron obsoletos 
+- Los vectores se volieron obsoletos.
+# Integer 
+- Es la faroma de referenciar que nuestro objeto es numerico.
+- No es un tipo primitivo por que es para referenciar objetos.
+# AutoBoxing
+- Es la forma en que java envuelve(Wrapper) sus tipos de datos primitivos con las referencias a objetos.
+- Integer(Objeto) envuelve a int(primitivo).
+# Unboxing
+- Es la forma que java extrae un objeto y se lo pasa un tipo de dato primitivo.
+Integer numeroObjeto = Integer.valueOf(40); (Objeto)
+int valorPrimitivo= numeroObjeto; unboxing (Integer)objeto->primitivo.
+- java lo hace por debajo con el metodo intValue().
+- Lo mismo pasa con los tipos de datos numericos
+byte byteInteger = numeroObjeto.byteValue().
+double doubleInteger = numeroObjeto.doubleValue().
+float floatInteger = numeroObjeto.floatValue().
 
 
 
