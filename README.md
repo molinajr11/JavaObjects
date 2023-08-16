@@ -51,6 +51,10 @@ float floatValue = (float) doubleValue; // Casting explícito de double a float.
 - Casting Caracteres 
 char charValue = 'A'.
 int intValue = (int) charValue;   // Casting explícito de char a int
+# Vectores 
+- Los vectores son un tipo de lista.
+- Trabajan con threadSafe
+- Los vectores se volieron obsoletos 
 
 
 
