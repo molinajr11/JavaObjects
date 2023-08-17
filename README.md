@@ -72,7 +72,7 @@ int valorPrimitivo= numeroObjeto; unboxing (Integer)objeto->primitivo.
 byte byteInteger = numeroObjeto.byteValue().
 double doubleInteger = numeroObjeto.doubleValue().
 float floatInteger = numeroObjeto.floatValue().
-
+![Alt text](image.png)
 
 
 
