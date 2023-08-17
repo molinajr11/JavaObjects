@@ -72,6 +72,8 @@ int valorPrimitivo= numeroObjeto; unboxing (Integer)objeto->primitivo.
 byte byteInteger = numeroObjeto.byteValue().
 double doubleInteger = numeroObjeto.doubleValue().
 float floatInteger = numeroObjeto.floatValue().
+# Wrappers
+¡Son clases que contienen funcionalidades y encapsulan la variable de tipo primitivo!
 ![Alt text](image.png)
 
 

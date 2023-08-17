@@ -11,3 +11,4 @@ public class WorkingStrings {
         System.out.println("stringStringFunction.apply(text)); = " + stringStringFunction.apply(text2));
     }
 }
+
