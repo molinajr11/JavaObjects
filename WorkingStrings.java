@@ -51,7 +51,19 @@ public class WorkingStrings {
     public void openFile() throws FileNotFoundException {
         // Código que puede lanzar una FileNotFoundException
     }
+    public class StockInsuficienteException extends Exception {
 
+        public StockInsuficienteException (String msg) {
+            super(msg);
+        }
+
+    }
+    public void RealizaCompra(Producto producto) throws StockInsuficienteException {
+        //otras instrucciones aquí..
+        if (producto.totalDeProdutosEnStock < 0) {
+            throw new StockInsuficienteException("Stock insuficiente");
+        }
+    }
 
 }
 

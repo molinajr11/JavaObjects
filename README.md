@@ -90,6 +90,11 @@ que pueda manejarlas.
 - Toda excepción en Java tiene un nombre que la idenfica. Este enfoque hace que sea más fácil de entender que usar 
 números mágicos (códigos de error) como 15, 7012 o 16.
 # Lanzamiento de exepciones (throw)
+
+Es en la clase Throwable donde tenemos casi todo el código relacionado con las excepciones, incluyendo getMessage() e
+printStackTrace (). El resto de la jerarquía tiene solo algunas sobrecargas de constructores para comunicar mensajes 
+específicos.
+
 - Solo se pude hacer throw con objetos de tipo exepcion.
 - Cuando se define un throw en el codigo se hasta ese momento continua el codigo
 - Para lanzar una excepción, además de instanciarla, es necesario lanzarla a través del throw.
@@ -102,29 +107,35 @@ throw new ArithmeticException();
 - The Throwable class is the superclass of all errors and exceptions in the Java language.
 - Puedo crear mis propias exepciones pero no pueden extender de throwable ni error.
 - Las exepciones que cree deben extender de runtimeException.
-# runtimeException 
+
+# runtimeException (unchecked)
 Cuando extiendo una exepcion de runtimeException debo usar try y catch para indicar a java
-que puede que se lance una exepcion.
-# Exception
-cuando extiendo de exception nesesito usar throws y miException porque esto le dice a java que con 
-seguridad que si algo pasa si o si lanza esa exception.
-# Error 
+que puede o no que se lance una exepcion.
+
+# Exception (checked)
+- cuando extiendo de exception nesesito usar throws y miException porque esto le dice a java que con 
+seguridad que si lanza esa exception.
+- se ve en tiempo de compilacion y nos avisa  de que no se va a ejecutar el proyecto
+
+# Error
 es diferente a la expecion ya que el error no se puede manipular ni controlar como una expecion
 se da cuando se llena la memoria por ejemplo cuando un metodo se llama asi mismo.
 ![img.png](img.png)
 
 # Throw vs Throws
-**Throws** (Lanzamientos)
+**Throws** (Lanzamientos)(checked)
 - Se utiliza para indicar que el método no manejará directamente la excepción, 
 sino que la propagará al código que llama al método
 - Se coloca en la firma de un método para indicar que el método puede lanzar una o más excepciones.
 - Puede haber varias excepciones mencionadas separadas por comas después de throws.
 
-**Throw** (Lanzamiento)
+**Throw** (Lanzamiento)(unchecked)
 - Es una sentencia que se utiliza para lanzar una excepción manualmente en un bloque de código.
 - Se utiliza dentro de un bloque try para generar una excepción en función de una condición o situación específica.
 - Puede lanzar cualquier tipo de excepción (que sea subclase de Throwable).
-- Puede ser útil para crear excepciones personalizadas o para manejar situaciones específicas que requieran una excepción.
+- Puede ser útil para crear excepciones personalizadas o para manejar situaciones específicas que requieran una excepción. 
+
+Nota:
 throws se utiliza en la firma del método para indicar las excepciones que el método podría lanzar,
 mientras que throw se utiliza dentro del código del método para lanzar manualmente
 una excepción en función de ciertas condiciones.
