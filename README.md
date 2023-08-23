@@ -119,7 +119,8 @@ se da cuando se llena la memoria por ejemplo cuando un metodo se llama asi mismo
 sino que la propagará al código que llama al método
 - Se coloca en la firma de un método para indicar que el método puede lanzar una o más excepciones.
 - Puede haber varias excepciones mencionadas separadas por comas después de throws.
-**Throw** 
+
+**Throw** (Lanzamiento)
 - Es una sentencia que se utiliza para lanzar una excepción manualmente en un bloque de código.
 - Se utiliza dentro de un bloque try para generar una excepción en función de una condición o situación específica.
 - Puede lanzar cualquier tipo de excepción (que sea subclase de Throwable).
