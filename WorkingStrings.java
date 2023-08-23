@@ -1,3 +1,4 @@
+import java.io.FileNotFoundException;
 import java.util.*;
 import java.util.function.Function;
 
@@ -28,8 +29,29 @@ public class WorkingStrings {
 
         Optional<Double> max = numbers.stream().max(Double::compareTo);
         System.out.println("max = " + max.get());
-        nombres.stream().sorted(String::compareToIgnoreCase).forEach(System.out::println);
+        try {
+            nombres.stream().sorted(String::compareToIgnoreCase).forEach(System.out::println);
+        }catch (RuntimeException e){
+            e.printStackTrace();
+        }
 
+        try {
+            System.out.println(1 / 0);
+        } catch (ArithmeticException | NullPointerException ex) {
+            ex.printStackTrace();
+        }
     }
+
+    public void validateAge(int age) {
+        if (age < 0) {
+            throw new IllegalArgumentException("Age cannot be negative");
+        }
+    }
+
+    public void openFile() throws FileNotFoundException {
+        // Código que puede lanzar una FileNotFoundException
+    }
+
+
 }
 
