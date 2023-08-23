@@ -6,9 +6,11 @@ public class WorkingStrings {
     public static void main(String[] args) {
         String text= "piensa en grande se Grande " ;
         String text2 = "provando arrays ";
-        Function<String, String> stringStringFunction = (String upercase) -> upercase.substring(0, 1).toUpperCase() + upercase.substring(1);
+        Function<String, String> stringStringFunction = (String upercase) -> upercase.substring(0, 1).toUpperCase()
+                + upercase.substring(1);
         System.out.println("stringStringFunction.apply(text)); = " + stringStringFunction.apply(text));
         System.out.println("stringStringFunction.apply(text)); = " + stringStringFunction.apply(text2));
+
         List<String> nombres = new ArrayList<>();
         nombres.add("Super Mario");
         nombres.add("Yoshi");
@@ -27,7 +29,9 @@ public class WorkingStrings {
         numbers.add(13.6);
         numbers.add(12.3);
 
-        Optional<Double> max = numbers.stream().max(Double::compareTo);
+        Optional<Double> max = numbers
+                .stream()
+                .max(Double::compareTo);
         System.out.println("max = " + max.get());
         try {
             nombres.stream().sorted(String::compareToIgnoreCase).forEach(System.out::println);

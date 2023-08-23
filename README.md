@@ -140,6 +140,10 @@ throws se utiliza en la firma del método para indicar las excepciones que el m�
 mientras que throw se utiliza dentro del código del método para lanzar manualmente
 una excepción en función de ciertas condiciones.
 
-
-
+# Finally
+Se usa junto con try y catch de forma opcional que va a ejecutar una instruccion independientemente
+si se produce la exepcion o no.
+- Garantizar la Ejecución: Asegura que ciertas instrucciones se ejecuten, incluso si se produce una excepción inesperada.
+- se puede usar try junto con finally pero la exception no sera controlada porque falta el catch.
+- normalmente se usa para cerrar un recurso.
  
