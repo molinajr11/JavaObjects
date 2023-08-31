@@ -1,4 +1,16 @@
-# Interface Vs Abstract Clas 
+# Enum (enumeration)
+- Define un conjunto de constantes que una variable podria tomar con nombres descriptivos a los valores constantes
+- Premite constructores y metodos personalizados para agregar informacion adicional a la constante que tiene el enum.
+
+# Records
+- Utiles para casos en los que solo necesita almacenar y acceder datos simples
+- Utiles como Dto.
+- Son una clase que se introdujo en java 16.
+- Se usan para representar tipos de datos inmutables.
+- Solo almacenan valores y no tienen un comportamiento adicional.
+- implementa automaticamente valores como equals(),hashCode(),toString().
+- Permite metodos personalizados pero no es lo ideal.
+# Interface Vs Abstract Class 
 | Interface  | Abstract Class |
 | ------------- | ------------- |
 | Permite Herencia multiple | no permite Herencia multiple
